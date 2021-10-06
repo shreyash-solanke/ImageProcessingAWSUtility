@@ -1,0 +1,8 @@
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/UserInput.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/Ec2Processing.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/ImageProcessing.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/SendEmail.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/ImageProcessingAwsLambda.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/S3Processing.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/SqsProcessing.java
+/home/shreyash/Documents/workspace-sts-3.8.4.RELEASE/imageProcessingLambda/src/main/java/io/shreyash/imageaws/SqsMessage.java

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app= "AWS-App">
+<head>
+	<title>AWS Assignment</title>
+	<title>AWS Assignment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="signin.css" rel="stylesheet">
+	
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Aws Assignment - image processing(REGISTER)</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+		<ul class = "nav navbar-nav navbar-right">
+		 	<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+
+
+<center>
+
+
+</center>
+
+	<div class = "row" ng-controller = "registerController as regiCtrl">
+
+	<div class = container>
+
+    	<div class="mesg">
+		<div class = "alert alert-success" ng-if = "regiCtrl.successMesg">  {{regiCtrl.successMesg}}</div> 	
+		<div class = "alert alert-danger" ng-if = "regiCtrl.errorMesg">  {{regiCtrl.errorMesg}}</div>
+		</div>
+
+		
+	<form class = "form-signin" >
+		
+		<h2 class="form-signin-heading">Please Register</h2>	
+			<div class = "form-group">
+			<label for="firstName" class="sr-only">First Name</label>
+        	<input type="text" id="firstName" class="form-control" ng-model = "regiCtrl.firstName" placeholder="First Name" required autofocus>
+        	<label for="lastName" class="sr-only">Last Name</label>
+        	<input type="text" id="lastName" class="form-control" ng-model = "regiCtrl.lastName" placeholder="Last Name" required autofocus>
+        	<label for="inputEmail" class="sr-only">Email address</label>
+        	<input type="email" id="inputEmail" class="form-control" ng-model = "regiCtrl.email" placeholder="Email address" required autofocus>
+        	<label for="inputPassword" class="sr-only">Password</label>
+		    <input type="password" id="inputPassword" class="form-control" ng-model = "regiCtrl.password" placeholder="Password" required>
+		
+		<button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="regiCtrl.registerUser()">Register</button>
+	</form>
+
+	</div>	
+	
+	</div>
+	
+
+	<script src="jquery-min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+	<script src="register.controller.js"></script>
+	<script src="register.service.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"></script>
+
+</body>
+
+
+
+</html>
